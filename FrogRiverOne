@@ -1,0 +1,21 @@
+function solution(X, A) {
+    var lastIndex = index = 0;
+    var lastStep = A.indexOf(X);
+    
+    for(var i = 1; i <= X; i++){
+        
+        index = A.indexOf(i);
+        
+        if(index == -1){
+            return index;
+        }
+        
+        if(index > lastIndex){
+            lastIndex = index
+        }
+        
+    }
+    
+    return (lastStep > lastIndex) ? lastIndex : lastIndex;
+    
+}
