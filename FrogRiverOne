@@ -1,21 +1,27 @@
 function solution(X, A) {
-    var lastIndex = index = 0;
-    var lastStep = A.indexOf(X);
+    var counted = [];
+    var counter = 0;
+    var time = -1;
     
-    for(var i = 1; i <= X; i++){
-        
-        index = A.indexOf(i);
-        
-        if(index == -1){
-            return index;
-        }
-        
-        if(index > lastIndex){
-            lastIndex = index
+    if(X == 1 && A[0] == 1){
+        return 0;
+    }
+    
+    for(var i = 0; i< A.length; i++){
+        if(A[i] <= X){
+            if(!counted[A[i]]){
+                counted[A[i]] = 1;
+                counter++;
+            }
+            
+            if(counter == X){
+                time = i;
+                break;
+            }
         }
         
     }
     
-    return (lastStep > lastIndex) ? lastIndex : lastIndex;
+    return time;
     
 }
