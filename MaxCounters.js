@@ -1,6 +1,10 @@
 function solution(N, A) {
 
-    var array = setAll(0, [], N), index = max = lastMax = 0;
+    var array = [], index = max = lastMax = 0;
+    
+    for(var i = 0; i < N; i++){
+        array[i] = 0;
+    }
     
     for(var i = 0; i < A.length; i++){
         
@@ -12,6 +16,7 @@ function solution(N, A) {
         }else if(A[i] == N+1){
             lastMax = max;
         }
+        
     }
     
     for(var i = 0; i < N; i++){
