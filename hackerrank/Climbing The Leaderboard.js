@@ -1,6 +1,5 @@
 function climbingLeaderboard(scores, alice) {
   var ranks = {},
-    lastRank,
     aliceMin = alice[0],
     aliceRank = [],
     index = 1;
