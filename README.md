@@ -2,6 +2,7 @@
 
 ## Codility
 
+- [CountDiv](/codility/CountDiv.js)
 - [FrogRiverOne](/codility/FrogRiverOne.js)
 - [GenomicRangeQuery](/codility/GenomicRangeQuery.js)
 - [MaxCounters.js](/codility/MaxCounters.js)
