@@ -10,6 +10,8 @@
 
 - Stacks and Queues
   - [Brackets](/codility/Brackets.js)
+  - [Fish](/codility/Fish.js)
+  - [Nesting](/codility/Nesting.js)
 
 * [FrogRiverOne](/codility/FrogRiverOne.js)
 * [GenomicRangeQuery](/codility/GenomicRangeQuery.js)
